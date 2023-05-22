@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Mysoleas\PackageSopay\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class PackageSopayCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'package-sopay';
 
     public $description = 'My command';
 

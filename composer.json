@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mysoleas/package-sopay",
+    "description": "Package pour le paiement en ligne de soleaspay",
     "keywords": [
-        ":vendor_name",
+        "Mysoleas",
         "laravel",
-        ":package_slug"
+        "package-sopay"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mysoleas/package-sopay",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mysoleas",
+            "email": "mysoleas@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Mysoleas\\PackageSopay\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "Mysoleas\\PackageSopay\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Mysoleas\\PackageSopay\\PackageSopayServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PackageSopay": "Mysoleas\\PackageSopay\\Facades\\PackageSopay"
             }
         }
     },
