@@ -3,8 +3,8 @@
 namespace Mysoleas\PackageSopay\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Mysoleas\PackageSopay\PackageSopayServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

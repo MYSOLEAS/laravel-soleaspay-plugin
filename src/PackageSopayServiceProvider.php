@@ -2,9 +2,9 @@
 
 namespace Mysoleas\PackageSopay;
 
+use Mysoleas\PackageSopay\Commands\PackageSopayCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Mysoleas\PackageSopay\Commands\PackageSopayCommand;
 
 class PackageSopayServiceProvider extends PackageServiceProvider
 {
