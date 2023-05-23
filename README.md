@@ -35,7 +35,7 @@ return [
     'x-api-key' => 'your api key'
 ];
 ```
-to finish you just have to send the following information : 
+to finish you just have to send the following information :
 -service (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);
 -wallet;
 -amount;
