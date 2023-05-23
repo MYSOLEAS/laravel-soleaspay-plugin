@@ -1,4 +1,4 @@
-# Package pour le paiement en ligne de soleaspay
+# Package laravel pour le paiement en ligne via soleaspay
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -11,9 +11,8 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/package-sopay.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/package-sopay)
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+We invest a lot of resources in the creation of packages to facilitate the integration of online payments via our [soleaspay platform](https://soleaspay.com) . You can support us by using our package on your laravel application.
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -29,19 +28,34 @@ You can publish the config file with:
 php artisan vendor:publish --tag="package-sopay-config"
 ```
 
-This is the contents of the published config file:
+You must now add your api-key provided by our soleaspay platform in the configuration file named package-sopay.php located in the config directory of your application.This is the contents of the published config file:
 
 ```php
 return [
-    'x-api-key' => ''
+    'x-api-key' => 'your api key'
 ];
 ```
+to finish you just have to send the following information: 
+-service (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);
+-wallet;
+-amount;
+-currency; 
+-order_id;
+To do this you must include the Packagesopay class in your file to be able to use our function processPayment(service,wallet,amount,currency,order_id). Here is a usage pattern :
 
+```php
+<?php
 
-## Testing
+namespace App\Http\Controllers;
+use Mysoleas\PackageSopay\PackageSopay;
 
-```bash
-composer test
+class TestController extends Controller
+{
+    public function myControllerMethod() {
+        $myClassInstance = new PackageSopay();
+        $myClassInstance->processPayment('mtn_mobile_money',900654321,100000,"XAF","123456789");
+    }
+}
 ```
 
 ## Changelog
@@ -58,8 +72,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Mysoleas](https://github.com/Mysoleas)
-- [All Contributors](../../contributors)
+- [Mysoleas](https://mysoleas.com)
 
 ## License
 
