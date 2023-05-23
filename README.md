@@ -1,9 +1,9 @@
 # Package laravel pour le paiement en ligne via soleaspay
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
+<!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
+[![Total Downloads](https://img.shields.io/packagist/dt/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay) -->
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -28,20 +28,20 @@ You can publish the config file with:
 php artisan vendor:publish --tag="package-sopay-config"
 ```
 
-You must now add your api-key provided by our soleaspay platform in the configuration file named package-sopay.php located in the config directory of your application.This is the contents of the published config file:
+You must now add your api-key provided by our soleaspay platform in the configuration file named __package-sopay.php__ located in the config directory of your application.This is the contents of the published config file:
 
 ```php
 return [
     'x-api-key' => 'your api key'
 ];
 ```
-to finish you just have to send the following information :
--service (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);
--wallet;
--amount;
--currency; 
--order_id;
-To do this you must include the Packagesopay class in your file to be able to use our function processPayment(service,wallet,amount,currency,order_id). Here is a usage pattern :
+to finish you just have to send the following information :  
+* service (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);  
+* wallet;  
+* amount;  
+* currency;  
+* order_id;  
+To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__. Here is a usage pattern :
 
 ```php
 <?php
