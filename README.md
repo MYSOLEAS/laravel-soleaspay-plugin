@@ -1,4 +1,4 @@
-# Package-sopay
+# Laravel Package-sopay
 
 <!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -10,7 +10,7 @@ Package to allow developers using the laravel framework to easily integrate a re
 
 ## Support us
 
-[<img src="https://app.soleaspay.com/images/sopay.png" width="300px" />](https://soleaspay.com)
+[<img src="https://app.soleaspay.com/images/sopay.png" width="200px" />](https://soleaspay.com)
 
 We invest a lot of resources in the creation of packages to facilitate the integration of online payments via our [soleaspay platform](https://soleaspay.com) . You can support us by using our package on your laravel application.
 
