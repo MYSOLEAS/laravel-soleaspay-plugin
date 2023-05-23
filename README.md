@@ -37,11 +37,11 @@ return [
 ];
 ```
 to finish you just have to send the following information :  
-* service (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);  
-* wallet;  
-* amount;  
-* currency;  
-* order_id;  
+* __service__ (orange_money,mtn_mobile_money,bitcoin,paypal,express_union,perfect_money,litecoin,dogecoin);  
+* __wallet__;  
+* __amount__;  
+* __currency__;  
+* __order_id__;  
 
 To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__. Here is a usage pattern :
 
