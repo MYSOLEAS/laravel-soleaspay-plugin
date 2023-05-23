@@ -1,9 +1,8 @@
 # Laravel Package-sopay
 
-<!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mysoleas/package-sopay/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mysoleas/package-sopay/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay) -->
+[![Total Downloads](https://img.shields.io/packagist/dt/mysoleas/package-sopay.svg?style=flat-square)](https://packagist.org/packages/mysoleas/package-sopay)
 
 
 Package to allow developers using the laravel framework to easily integrate a reliable and secure online payment method into their projects.
