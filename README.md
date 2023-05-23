@@ -9,7 +9,7 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/package-sopay.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/package-sopay)
+[<img src="https://app.soleaspay.com/images/sopay.png" width="419px" />](https://soleaspay.com)
 
 We invest a lot of resources in the creation of packages to facilitate the integration of online payments via our [soleaspay platform](https://soleaspay.com) . You can support us by using our package on your laravel application.
 
@@ -40,7 +40,8 @@ to finish you just have to send the following information :
 * wallet;  
 * amount;  
 * currency;  
-* order_id;  !
+* order_id;  
+
 To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__. Here is a usage pattern :
 
 ```php
