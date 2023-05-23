@@ -42,7 +42,7 @@ to finish you just have to send the following information :
 * __currency__;  
 * __order_id__;  
 
-To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__. Here is a usage pattern :
+To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__ and retrieve the response of the operation. Here is a usage pattern :
 
 ```php
 <?php
