@@ -9,8 +9,8 @@ class PackageSopay
     public function processPayment($service, $wallet, $amount, $currency, $orderId)
     {
         $services = [
-            'orange_money' => 2,
-            'mtn_mobile_money' => 1,
+            'orange_money_CM' => 2,
+            'mtn_mobile_money_CM' => 1,
             'bitcoin' => 3,
             'paypal' => 7,
             'express_union' => 5,
@@ -23,7 +23,7 @@ class PackageSopay
             'x-api-key' => config('package-sopay.x-api-key'),
             'service' => $services[$service],
             'operation' => $operation,
-        ])->post('https://soleaspay.com/api/agent/sandbox', [
+        ])->post('https://soleaspay.com/api/agent/bills', [
             'wallet' => $wallet,
             'amount' => $amount,
             'currency' => $currency,

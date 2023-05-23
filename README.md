@@ -36,7 +36,7 @@ return [
 ];
 ```
 to finish you just have to send the following information :  
-* __service__ (orange_money, mtn_mobile_money, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin)  
+* __service__ (orange_money_CM, mtn_mobile_money_CM, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin)  
 * __wallet__ ;  
 * __amount__ ;  
 * __currency__ ;  
