@@ -42,7 +42,7 @@ use Mysoleas\PackageSopay\PackageSopay;
 ```
 
 to finish you just have to send the following information :  
-* __service__ (orange_money_CM, mtn_mobile_money_CM, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin)  
+* __service__ (orange_money_CM, mtn_mobile_money_CM, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin) ;
 * __wallet__ ;  
 * __amount__ ;  
 * __currency__ ;  
@@ -91,7 +91,7 @@ class TestController extends Controller
         $myClassInstance->getLink('billing', 2, 1000, 'XAF', 'fr', 'Purchase of supplies', 'mysoleas')
     }
 }
-
+```
 
 ## Changelog
 
