@@ -38,7 +38,7 @@ class PackageSopay
     {
         $apikey = config('package-sopay.x-api-key');
         $links = [];
-        $codeData = array();
+        $codeData = [];
         $modes = [
             'billing' => 'b',
             'tiping' => 't',
@@ -48,11 +48,11 @@ class PackageSopay
             $length = 10;
             $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $ref = substr(str_shuffle($chars), 0, $length);
-            array_push($links, 'https://soleaspay.com/m/' . $ref . '');
-            $url = 'https://soleaspay.com/qr/pay/sb.html?l=' . base64_encode($langue) . '&a=' . base64_encode($amount) . '&d=' . base64_encode($description) . '&m=' . base64_encode($modes[$mode]) . '&c=' . base64_encode($currency) . '&k=' . base64_encode($apikey) . '&s=' . base64_encode($shopName) . '&q=' . base64_encode($ref) . '';
-            array_push($codeData, array('ref' => $ref, 'link' => $url, 'type' => $modes[$mode]));
+            array_push($links, 'https://soleaspay.com/m/'.$ref.'');
+            $url = 'https://soleaspay.com/qr/pay/sb.html?l='.base64_encode($langue).'&a='.base64_encode($amount).'&d='.base64_encode($description).'&m='.base64_encode($modes[$mode]).'&c='.base64_encode($currency).'&k='.base64_encode($apikey).'&s='.base64_encode($shopName).'&q='.base64_encode($ref).'';
+            array_push($codeData, ['ref' => $ref, 'link' => $url, 'type' => $modes[$mode]]);
         }
-        
+
         $response = Http::withHeaders([
             'x-api-key' => config('package-sopay.x-api-key'),
             'Accept' => 'application/json',
