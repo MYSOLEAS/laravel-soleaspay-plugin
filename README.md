@@ -105,6 +105,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Mysoleas](https://mysoleas.com)
+- [Soleaspay](https://soleaspay.com)
 
 ## License
 
