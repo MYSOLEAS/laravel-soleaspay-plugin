@@ -35,6 +35,12 @@ return [
     'x-api-key' => 'your api key'
 ];
 ```
+You need to include the Packagesopay class in your file using:
+
+```php
+use Mysoleas\PackageSopay\PackageSopay;
+```
+
 to finish you just have to send the following information :  
 * __service__ (orange_money_CM, mtn_mobile_money_CM, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin)  
 * __wallet__ ;  
@@ -42,7 +48,8 @@ to finish you just have to send the following information :
 * __currency__ ;  
 * __order_id__ ;  
 
-To do this you must include the Packagesopay class in your file to be able to use our function __processPayment(service,wallet,amount,currency,order_id)__ and retrieve the response of the operation. Here is a usage pattern :
+
+To do this use the function __processPayment(service,wallet,amount,currency,order_id)__ and retrieve the response of the operation. Here is a usage pattern :
 
 ```php
 <?php
@@ -58,6 +65,33 @@ class TestController extends Controller
     }
 }
 ```
+
+
+You can also get payment links. For this you must send the following information:
+* __type__ (billing, tiping) ;  
+* __instance__ ;  
+* __amount__ ;  
+* __currency__ ;  
+* __langue__ ; 
+* __description__ ; 
+* __shopName__ ; 
+
+To do this use the function __getLink(mode, instance, amount, currency, langue, description, shopName)__ and retrieve the response of the operation. Here is a usage pattern :
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+use Mysoleas\PackageSopay\PackageSopay;
+
+class TestController extends Controller
+{
+    public function myControllerMethod() {
+        $myClassInstance = new PackageSopay();
+        $myClassInstance->getLink('billing', 2, 1000, 'XAF', 'fr', 'Purchase of supplies', 'mysoleas')
+    }
+}
+
 
 ## Changelog
 
