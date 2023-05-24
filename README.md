@@ -67,7 +67,7 @@ class TestController extends Controller
 ```
 
 
-You can also get payment links. For this you must send the following information:
+You can also get payment links from [soleaspay](https://soleaspay.com) platform. For this you must send the following information:
 * __type__ (billing, tiping) ;  
 * __instance__ ;  
 * __amount__ ;  
