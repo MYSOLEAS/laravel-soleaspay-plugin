@@ -28,7 +28,7 @@ You can publish the config file with:
 php artisan vendor:publish --tag="package-sopay-config"
 ```
 
-You must now add your api-key provided by our soleaspay platform in the configuration file named __package-sopay.php__ located in the config directory of your application.This is the contents of the published config file:
+You must now add your api-key provided by our [soleaspay](https://soleaspay.com) platform in the configuration file named __package-sopay.php__ located in the config directory of your application.This is the contents of the published config file:
 
 ```php
 return [
