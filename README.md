@@ -61,7 +61,7 @@ class TestController extends Controller
 {
     public function myControllerMethod() {
         $myClassInstance = new PackageSopay();
-        $myClassInstance->processPayment('mtn_mobile_money',328743892,100000,"XAF","123456789");
+        $myClassInstance->processPayment('mtn_mobile_money',677000000,100000,"XAF","123456789");
     }
 }
 ```
