@@ -23,10 +23,6 @@
             "Mysoleas\\PackageSopay\\": "src/"
         }
     },
-    "scripts": {
-        "analyse": "vendor/bin/phpstan analyse",
-        "format": "vendor/bin/pint"
-    },
     "extra": {
         "laravel": {
             "providers": [
