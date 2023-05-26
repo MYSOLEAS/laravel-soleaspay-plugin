@@ -24,7 +24,6 @@
         "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
         "nunomaduro/larastan": "^2.0.1",
-        "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-arch": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
@@ -38,16 +37,8 @@
             "Mysoleas\\PackageSopay\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Mysoleas\\PackageSopay\\Tests\\": "src/"
-        }
-    },
     "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
     },
     "config": {
