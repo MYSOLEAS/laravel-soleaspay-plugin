@@ -38,6 +38,11 @@
             "Mysoleas\\PackageSopay\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Mysoleas\\PackageSopay\\Tests\\": "src/"
+        }
+    },
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "analyse": "vendor/bin/phpstan analyse",
