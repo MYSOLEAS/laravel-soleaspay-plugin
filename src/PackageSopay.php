@@ -18,7 +18,7 @@ class PackageSopay
             'litecoin' => 10,
             'dogecoin' => 11,
         ];
-        
+
         $serv = [
             'orange_money_CM' => 'orange_money_CM',
             'mtn_mobile_money_CM' => 'mtn_mobile_money_CM',
