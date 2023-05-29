@@ -45,7 +45,7 @@ to finish you just have to send the following information :
 * __service__ (orange_money_CM, mtn_mobile_money_CM, bitcoin, paypal, express_union, perfect_money, litecoin, dogecoin) ;
 * __wallet__ ;  
 * __amount__ ;  
-* __currency__ ;  
+* __currency__ (XAF, USD, EUR) ;  
 * __order_id__ ;  
 
 
@@ -71,8 +71,8 @@ You can also get payment links from [soleaspay](https://soleaspay.com) platform.
 * __type__ (billing, tiping) ;  
 * __instance__ ;  
 * __amount__ ;  
-* __currency__ ;  
-* __langue__ ; 
+* __currency__ (XAF, USD, EUR) ;  
+* __langue__ (fr, en); 
 * __description__ ; 
 * __shopName__ ; 
 
