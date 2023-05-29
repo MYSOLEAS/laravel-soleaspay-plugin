@@ -18,6 +18,16 @@ class PackageSopay
             'litecoin' => 10,
             'dogecoin' => 11,
         ];
+        $serv = [
+            'orange_money_CM' => 'orange_money_CM',
+            'mtn_mobile_money_CM' => 'mtn_mobile_money_CM',
+            'bitcoin' => 'bitcoin',
+            'paypal' => 'paypal',
+            'express_union' => 'express_union',
+            'perfect_money' => 'perfect_money',
+            'litecoin' => 'litecoin',
+            'dogecoin' => 'dogecoin',
+        ];
         $curr = [
             'USD' => 'USD',
             'XAF' => 'XAF',
@@ -26,7 +36,7 @@ class PackageSopay
         $operation = 2;
         if (! in_array($currency, $curr)) {
             echo 'The currency '."$currency".' is not accepted. You can use the following currencies: "USD", "XAF", "EUR".';
-        } elseif (! in_array($service, $services)) {
+        } elseif (! in_array($service, $serv)) {
             echo 'The service '."$service".' is not accepted. You can use the following services: 
             "orange_money_CM","mtn_mobile_money_CM","bitcoin","paypal","express_union","perfect_money","litecoin","dogecoin".';
         } else {
