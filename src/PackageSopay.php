@@ -18,7 +18,11 @@ class PackageSopay
             'litecoin' => 10,
             'dogecoin' => 11,
         ];
-        
+        $curr = [
+            'USD' => 'USD',
+            'XAF' => 'XAF',
+            'EUR' => 'EUR',
+        ];
         $serv = [
             'orange_money_CM' => 'orange_money_CM',
             'mtn_mobile_money_CM' => 'mtn_mobile_money_CM',
@@ -28,11 +32,6 @@ class PackageSopay
             'perfect_money' => 'perfect_money',
             'litecoin' => 'litecoin',
             'dogecoin' => 'dogecoin',
-        ];
-        $curr = [
-            'USD' => 'USD',
-            'XAF' => 'XAF',
-            'EUR' => 'EUR',
         ];
         $operation = 2;
         if (! in_array($currency, $curr)) {
