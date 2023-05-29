@@ -1,10 +1,13 @@
 {
     "name": "mysoleas/package-sopay",
     "description": "Package pour le paiement en ligne de soleaspay",
+    "version": "1.0.0",
     "keywords": [
         "Mysoleas",
         "laravel",
-        "package-sopay"
+        "soleaspay",
+        "package-sopay",
+        "paiement"
     ],
     "homepage": "https://github.com/mysoleas/package-sopay",
     "license": "MIT",
@@ -66,7 +69,5 @@
                 "PackageSopay": "Mysoleas\\PackageSopay\\Facades\\PackageSopay"
             }
         }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    }
 }
