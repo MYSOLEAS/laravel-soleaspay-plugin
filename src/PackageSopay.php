@@ -34,10 +34,10 @@ class PackageSopay
             'EUR' => 'EUR',
         ];
         $operation = 2;
-        if (!in_array($currency, $curr)) {
-            echo 'The currency ' . "$currency" . ' is not accepted. You can use the following currencies: "USD", "XAF", "EUR".';
-        } elseif (!in_array($service, $services)) {
-            echo 'The service ' . "$service" . ' is not accepted. You can use the following services: 
+        if (! in_array($currency, $curr)) {
+            echo 'The currency '."$currency".' is not accepted. You can use the following currencies: "USD", "XAF", "EUR".';
+        } elseif (! in_array($service, $services)) {
+            echo 'The service '."$service".' is not accepted. You can use the following services: 
             "orange_money_CM","mtn_mobile_money_CM","bitcoin","paypal","express_union","perfect_money","litecoin","dogecoin".';
         } else {
             $response = Http::withHeaders([
