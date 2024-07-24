@@ -44,7 +44,7 @@ class PackageSopay
                 'x-api-key' => config('package-sopay.x-api-key'),
                 'service' => $services[$service],
                 'operation' => $operation,
-            ])->post('https://soleaspay.com/api/agent/bills', [
+            ])->post('https://soleaspay.com/api/agent/bills?from=SELF', [
                 'wallet' => $wallet,
                 'amount' => $amount,
                 'currency' => $currency,
