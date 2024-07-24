@@ -33,6 +33,16 @@ class PackageSopay
             'XAF' => 'XAF',
             'EUR' => 'EUR',
         ];
+        $serv = [
+            'orange_money_CM' => 'orange_money_CM',
+            'mtn_mobile_money_CM' => 'mtn_mobile_money_CM',
+            'bitcoin' => 'bitcoin',
+            'paypal' => 'paypal',
+            'express_union' => 'express_union',
+            'perfect_money' => 'perfect_money',
+            'litecoin' => 'litecoin',
+            'dogecoin' => 'dogecoin',
+        ];
         $operation = 2;
         if (! in_array($currency, $curr)) {
             echo 'The currency '."$currency".' is not accepted. You can use the following currencies: "USD", "XAF", "EUR".';
@@ -44,7 +54,7 @@ class PackageSopay
                 'x-api-key' => config('package-sopay.x-api-key'),
                 'service' => $services[$service],
                 'operation' => $operation,
-            ])->post('https://soleaspay.com/api/agent/bills', [
+            ])->post('https://soleaspay.com/api/agent/bills?from=SELF', [
                 'wallet' => $wallet,
                 'amount' => $amount,
                 'currency' => $currency,
